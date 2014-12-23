@@ -1,0 +1,52 @@
+{
+  "name": "image-inline",
+  "description": "Give a image then get a Data URI.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/starandtina/image-inline",
+  "author": {
+    "name": "starandtina",
+    "url": "https://github.com/starandtina"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/starandtina/image-inline.git"
+  },
+  "bugs": {
+    "url": "https://github.com/starandtina/image-inline/issues"
+  },
+  "licenses": [{
+    "type": "MIT",
+    "url": "https://github.com/starandtina/image-inline/blob/master/LICENSE-MIT"
+  }],
+  "keywords": [
+    "image",
+    "inline",
+    "image inline",
+    "imageinline",
+    "cli",
+    "command line"
+  ],
+  "preferGlobal": true,
+  "bin": {
+    "imageinline": "./bin/imageinline"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.8"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "test-cov": "node node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --reporter dot",
+    "test-travis": "node node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- --reporter dot"
+  },
+  "dependencies": {
+    "minimist": "~0.0.8",
+    "verbalize": "~0.1.1"
+  },
+  "devDependencies": {
+    "istanbul": "^0.3.5",
+    "mime": "^1.2.11",
+    "mocha": "^2.0.1",
+    "multiline": "^1.0.1"
+  }
+}

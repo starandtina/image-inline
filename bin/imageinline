@@ -1,0 +1,41 @@
+#!/usr/bin/env node
+
+var multiline = require('multiline');
+var log = require('verbalize');
+var argv = require('minimist')(process.argv.slice(2));
+
+
+// Verbalize `runner`
+log.runner = 'image-inline';
+
+// Use `-f` or `--file` to specify the source file
+var file = argv._[0] || argv.f || argv.file;
+
+
+if (!file) {
+  showHelp();
+  process.exit();
+}
+
+function showHelp() {
+  log.info(multiline.stripIndent(function () {
+    /*
+      Give a image then get a Data URI.
+
+      Usage
+        imageinline <image>
+      Example
+        imageinline sample.png
+      Options
+        -f, --file source image
+      */
+  }));
+}
+
+
+/**
+ * Application
+ */
+
+console.log(require('../')(file));
+
