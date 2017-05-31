@@ -1,7 +1,7 @@
 {
   "name": "image-inline",
   "description": "Give a image then get a Data URI.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "homepage": "https://github.com/starandtina/image-inline",
   "author": {
     "name": "starandtina",
@@ -14,10 +14,12 @@
   "bugs": {
     "url": "https://github.com/starandtina/image-inline/issues"
   },
-  "licenses": [{
-    "type": "MIT",
-    "url": "https://github.com/starandtina/image-inline/blob/master/LICENSE-MIT"
-  }],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/starandtina/image-inline/blob/master/LICENSE-MIT"
+    }
+  ],
   "keywords": [
     "image",
     "inline",
