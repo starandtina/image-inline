@@ -41,12 +41,12 @@
   },
   "dependencies": {
     "minimist": "~0.0.8",
-    "verbalize": "~0.1.1"
+    "verbalize": "~0.1.1",
+    "multiline": "^1.0.1"
   },
   "devDependencies": {
     "istanbul": "^0.3.5",
     "mime": "^1.2.11",
-    "mocha": "^2.0.1",
-    "multiline": "^1.0.1"
+    "mocha": "^2.0.1"
   }
 }
